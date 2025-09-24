@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopDuraka Online — Козырный Магазин</title>
+  <meta name="description" content="ShopDuraka Online — Козырный Магазин. Быстрая и надёжная покупка игровой валюты и бонусов для Дурак Онлайн. Лучшие цены, мгновенная выдача и поддержка 24/7 через Telegram." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --accent:#ff3c3c;
+      --accent2:#b30000;
+      --bg:#000000;
+      --card:#141414;
+      --muted:#b0b0b0;
+      color-scheme:dark;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background: var(--bg);
+      color:#E6EEF8;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    .container{max-width:1200px;margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .logo{display:flex;gap:10px;align-items:center}
+    .logo .mark{
+      width:50px;height:50px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;font-size:20px;
+      color:white;
+    }
+    h1,h2,h3,h4{
+      animation: fadeUp 1s ease both;
+    }
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    p.lead{color:var(--muted);font-size:18px;margin-bottom:20px}
+    nav a{color:var(--muted);margin-left:14px;text-decoration:none;font-weight:500}
+    nav a:hover{color:white}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:flex-start;margin-top:20px}
+    .card{
+      background:rgba(255,255,255,0.03);
+      padding:22px;border-radius:16px;
+      box-shadow:0 6px 20px rgba(255,0,0,0.2);
+      transition:transform .3s ease, box-shadow .3s ease;
+      animation: fadeUp 1s ease both;
+    }
+    .card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(255,0,0,0.3)}
+
+    .features{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .feature{background:rgba(255,255,255,0.05);padding:8px 12px;border-radius:8px;font-size:14px;color:var(--muted)}
+
+    h2{margin:28px 0 14px;font-size:24px;color:var(--accent)}
+
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .pkg{background:rgba(255,255,255,0.05);padding:18px;border-radius:14px;transition:.3s;display:flex;flex-direction:column;justify-content:space-between;animation: fadeUp 1.2s ease both}
+    .pkg:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 8px 24px rgba(255,0,0,0.4)}
+    .pkg h3{font-size:20px;color:var(--accent);margin-bottom:6px}
+    .pkg p{font-size:14px;color:var(--muted);margin-bottom:12px}
+    .price{font-size:20px;font-weight:700;margin-bottom:14px}
+
+    .btn{
+      display:flex;align-items:center;justify-content:center;
+      padding:12px 16px;border-radius:8px;border:0;cursor:pointer;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:white;font-weight:600;text-align:center;text-decoration:none;
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+    .btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 0 12px rgba(255,0,0,0.6)}
+
+    footer{margin-top:40px;padding:20px 0;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Отзывы */
+    .reviews{margin-top:40px}
+    .review{background:rgba(255,255,255,0.05);padding:16px;border-radius:12px;margin-bottom:14px;animation: fadeUp 1s ease both}
+    .review strong{color:var(--accent)}
+    .stars{color:gold;font-size:14px;margin-top:4px}
+
+    /* Фиксированная кнопка */
+    .floating-btn{
+      position:fixed;bottom:20px;right:20px;z-index:1000;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      border-radius:50%;width:60px;height:60px;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 12px rgba(255,0,0,0.6);
+      animation:pulse 2s infinite;
+    }
+    .floating-btn img{width:32px;height:32px}
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(255,0,0,0.7)}
+      70%{box-shadow:0 0 0 20px rgba(255,0,0,0)}
+      100%{box-shadow:0 0 0 0 rgba(255,0,0,0)}
+    }
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      h1{font-size:26px}
+      nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+      .pkg,.card{width:100%}
+    }
+  </style>
+  
+  
+</head>
+<body>
+  
+</div>
+
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">SD</div>
+        <div>
+          <div style="font-weight:700;font-size:18px">ShopDuraka Online</div>
+          <div class="muted" style="font-size:13px">Козырный Магазин</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#with">С покрытием</a>
+        <a href="#without">Без покрытия</a>
+        <a href="#bycoin">Монеты</a>
+        <a href="#smiles">Смайлы</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <h1>ShopDuraka Online — <span style="color:var(--accent)">Козырный Магазин</span></h1>
+        <p class="lead">Лучший сервис по покупке игровой валюты и бонусов для Дурак Онлайн. Козырные цены, мгновенная выдача и круглосуточная поддержка через Telegram.</p>
+
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+            <div>
+              <div class="feature">Надёжные сделки</div>
+              <div class="feature">Быстрая доставка</div>
+              <div class="feature">Козырные пакеты</div>
+            </div>
+            <div style="text-align:right">
+              <div class="muted" style="font-size:13px">Акция</div>
+              <div style="font-weight:800;font-size:22px;color:var(--accent)">-5% первый заказ</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="with">Прайс с покрытием комиссии</h2>
+        <p class="muted">Важно: для передачи кредитов ваш баланс в игре должен быть минимум 100.</p>
+        <div class="packages">
+          <div class="pkg"><h3>1 000 000</h3><p>С покрытием комиссии</p><div class="price">320 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>500 000</h3><p>С покрытием комиссии</p><div class="price">160 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>250 000</h3><p>С покрытием комиссии</p><div class="price">80 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>200 000</h3><p>С покрытием комиссии</p><div class="price">70 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>100 000</h3><p>С покрытием комиссии</p><div class="price">35 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+        </div>
+
+        <h2 id="without">Прайс без покрытия комиссии</h2>
+        <p class="muted">Важно: для передачи кредитов ваш баланс в игре должен быть минимум 100.</p>
+        <div class="packages">
+          <div class="pkg"><h3>1 000 000</h3><p>Без покрытия комиссии</p><div class="price">300 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>500 000</h3><p>Без покрытия комиссии</p><div class="price">150 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>250 000</h3><p>Без покрытия комиссии</p><div class="price">75 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>200 000</h3><p>Без покрытия комиссии</p><div class="price">60 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+          <div class="pkg"><h3>100 000</h3><p>Без покрытия комиссии</p><div class="price">30 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+        </div>
+
+        <h2 id="bycoin">Покупка по курсу</h2>
+        <p class="muted">Купите любое количество монет по фиксированному курсу: <strong>1 монета = 2 ₽</strong></p>
+        <div class="card" style="margin-top:12px">
+          <p>Примеры:</p>
+          <ul style="color:var(--muted);padding-left:20px">
+            <li>100 монет = 200 ₽</li>
+            <li>1000 монет = 2000 ₽</li>
+            <li>и так далее...</li>
+          </ul>
+          <div class="card" style="margin-top:16px">
+            <h3>Калькулятор монет</h3>
+  <input type="number" id="coinAmount" placeholder="Количество монет" style="width:100%;padding:8px;border-radius:6px;border:none;margin-bottom:6px">
+  <button class="btn" id="calcBtn">Рассчитать</button>
+  <p class="muted" id="calcResult"></p>
+</div>
+            <script>
+                  document.getElementById('calcBtn').addEventListener('click', () => {
+  const amount = parseInt(document.getElementById('coinAmount').value);
+  if(!isNaN(amount)) {
+    document.getElementById('calcResult').textContent = `Итого: ${amount * 2} ₽`;
+  } else {
+    document.getElementById('calcResult').textContent = 'Введите корректное число';
+  }
+});
+
+            </script>
+ 
+          
+
+          <a class="btn" style="margin-top:14px" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a>
+        </div>
+
+        <h2 id="smiles">Смайлы</h2>
+        <h2 id="smiles">Смайлы — укрась свою игру!</h2>
+<p class="muted">Уникальные наборы смайлов для профиля и чата. Все покупки через Telegram.</p>
+
+<div class="packages">
+  <div class="pkg"><h3>🐻 Мишки</h3><p>Набор смайлов</p><div class="price">15 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🤖 Роботы</h3><p>Набор смайлов</p><div class="price">20 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🃏 Покерная коллекция</h3><p>Набор смайлов</p><div class="price">60 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🧛‍♂️ Вампиры</h3><p>Набор смайлов</p><div class="price">160 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🦁 Львы</h3><p>Набор смайлов</p><div class="price">160 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🦄 Единороги</h3><p>Набор смайлов</p><div class="price">150 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>👷‍♂️ Гномы</h3><p>Набор смайлов</p><div class="price">225 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🐯 Тигры</h3><p>Набор смайлов</p><div class="price">1300 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🐉 Драконы</h3><p>Набор смайлов</p><div class="price">1000 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🐍 Змеи</h3><p>Набор смайлов</p><div class="price">1000 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🐂 Быки</h3><p>Набор смайлов</p><div class="price">2500 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🐇 Кролики</h3><p>Набор смайлов</p><div class="price">1200 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+  <div class="pkg"><h3>🐀 Крысы</h3><p>Набор смайлов</p><div class="price">15000 ₽</div><a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a></div>
+</div>
+
+<h2>Оставить отзыв</h2>
+<div class="reviews">
+  <form id="reviewForm">
+    <input type="text" id="reviewName" placeholder="Имя" required style="margin-bottom:6px;width:100%;padding:8px;border-radius:6px;border:none">
+    <textarea id="reviewText" placeholder="Текст отзыва" required style="margin-bottom:6px;width:100%;padding:8px;border-radius:6px;border:none"></textarea>
+    <input type="number" id="reviewStars" placeholder="Рейтинг 1-5" min="1" max="5" required style="margin-bottom:6px;width:100%;padding:8px;border-radius:6px;border:none">
+    <input type="text" id="reviewCode" placeholder="Код подтверждения" required style="margin-bottom:6px;width:100%;padding:8px;border-radius:6px;border:none">
+    <button type="submit" class="btn">Отправить</button>
+  </form>
+  <div id="reviewMessage" style="margin-top:8px;color:var(--accent)"></div>
+</div>
+
+<script>
+document.getElementById('reviewForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const code = document.getElementById('reviewCode').value.trim();
+  const validCode = "VIP100"; 
+  const messageEl = document.getElementById('reviewMessage');
+
+  if(code === validCode){
+    messageEl.textContent = "Отзыв принят!";
+   
+  } else {
+    messageEl.textContent = "Отзыв доступен только покупателям.";
+  }
+});
+</script>
+
+        <p class="muted">Следите за обновлениями!</p>
+
+        
+
+        <div class="reviews">
+          <h2>Отзывы</h2>
+          <div class="review"><strong>Иван</strong><div class="stars">★★★★★</div><p>Быстро и надёжно, получил монеты за 5 минут!</p></div>
+          <div class="review"><strong>Мария</strong><div class="stars">★★★★★</div><p>Удобный магазин, всё прозрачно. Советую!</p></div>
+          <div class="review"><strong>Андрей</strong><div class="stars">★★★★★</div><p>Хорошие цены, иногда чуть дольше выдача, но всё приходит.</p></div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card" style="margin-bottom:16px">
+          <h3 style="margin-top:0">Контакты</h3>
+          <p class="muted">Все покупки и поддержка — только через Telegram.</p>
+          <a class="btn" href="https://t.me/shopdurakaonline" target="_blank">Перейти в Telegram</a>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 6px">Важно</h4>
+          <p class="muted" style="font-size:13px">Мы не просим пароль от вашего аккаунта. Для выдачи укажите только игровой логин.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> ShopDuraka Online — Козырный Магазин. Все права защищены.
+    </footer>
+  </div>
+
+  <a href="https://t.me/shopdurakaonline" target="_blank" class="floating-btn"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
+</body>
+</html>
